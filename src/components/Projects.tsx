@@ -17,7 +17,7 @@ export function Projects() {
                   {project.isPublic ? (
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20">
                       <Github size={12} />
-                      Public Repository
+                      {project.github ? 'Public Repository' : 'Live Project'}
                     </span>
                   ) : (
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono font-medium bg-white/5 text-slate-400 border border-white/10">
@@ -28,8 +28,8 @@ export function Projects() {
                 </div>
                 
                 <h3 className="text-2xl font-semibold text-white group-hover:text-blue-300 transition-colors">
-                  {project.isPublic && project.github ? (
-                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
+                  {project.isPublic && (project.github ?? project.live) ? (
+                    <a href={project.github ?? project.live} target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4">
                       {project.title}
                     </a>
                   ) : (
@@ -42,13 +42,13 @@ export function Projects() {
                 </p>
               </div>
               
-              {project.isPublic && project.github && (
+              {project.isPublic && (project.github ?? project.live) && (
                 <a 
-                  href={project.github}
+                  href={project.github ?? project.live}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hidden md:inline-flex items-center shrink-0 justify-center w-10 h-10 rounded-full border border-white/10 text-slate-400 hover:text-white hover:bg-white/10 transition-colors"
-                  aria-label="View on GitHub"
+                  aria-label={project.github ? "View on GitHub" : "Open live project"}
                 >
                   <Github size={18} />
                 </a>
