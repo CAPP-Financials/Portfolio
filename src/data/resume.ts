@@ -30,8 +30,7 @@ export const resumeData = {
         "Cut customer churn 6% across 1,600+ stores ($2.3M retention value) by running statistical analysis on the full customer dataset before building customer-centricity cohorts and market-mix models.",
         "Cut the daily customer persona engine from 45 to 7 minutes and compute cost 70% ($180K a year) by rebuilding it in Python and PySpark.",
         "Designed a finance-validated loyalty fraud-detection system (rules plus gradient-boosted anomaly scoring) that contained fraud within 2% of revenue and preserved $400K+ annually.",
-        "Developed proxy-based market entry methodology for markets with zero usable baseline data using India demographics as proxies.",
-        "Improved marketing efficiency 40% across a multi-brand portfolio by restructuring campaign targeting."
+        "Developed proxy-based market entry methodology for markets with zero usable baseline data using India demographics as proxies."
       ]
     },
     {
