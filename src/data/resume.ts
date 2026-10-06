@@ -11,7 +11,7 @@ export const resumeData = {
   experience: [
     {
       company: "Independent Practice",
-      role: "Freelance Consulting — Strategy & Gen-AI",
+      role: "Independent Strategy & Gen-AI Consultant (pre-revenue)",
       location: "Remote, India",
       period: "Jan 2026 – Present",
       achievements: [
@@ -30,7 +30,7 @@ export const resumeData = {
         "Cut customer churn 6% across 1,600+ stores ($2.3M retention value) by running statistical analysis on the full customer dataset before building customer-centricity cohorts and market-mix models.",
         "Cut the daily customer persona engine from 45 to 7 minutes and compute cost 70% ($180K a year) by rebuilding it in Python and PySpark.",
         "Designed a finance-validated loyalty fraud-detection system (rules plus gradient-boosted anomaly scoring) that contained fraud within 2% of revenue and preserved $400K+ annually.",
-        "Developed proxy-based market entry methodology for markets with zero usable baseline data using India demographics as proxies."
+        "Built first-draft cohort, forecast and financial models for markets with no usable baseline data by borrowing proxies from adjacent Southeast Asian markets, applying a 10-15% drift buffer, then refining with client and stakeholder data; final figures landed close to the proxy-based drafts."
       ]
     },
     {
@@ -125,7 +125,7 @@ export const resumeData = {
   ],
   education: [
     {
-      degree: "MBA — Sustainability & Innovation",
+      degree: "MBA",
       institution: "Swansea University, Wales, UK",
       year: "2024 – 2025",
       details: "Capstone: Sustainability ROI Diagnostic for a £500M UK automotive retail group."
